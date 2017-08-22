@@ -1,0 +1,141 @@
+html{
+	height: 100%;
+}
+
+body{
+	background-color: #a8caea;
+}
+
+/* The switch - the box around the slider */
+.switchSpan{
+	margin: 0 35%;
+	margin-top: 5%;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 26px;
+  margin: 0%;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 26px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.simonLayOut{
+	margin: 0 23%;
+	padding-top: 10px;
+	border-radius: 10%;
+	margin-top: 10%;
+	background-color: black;
+	height: 500px;
+}
+
+.red{
+	background-color: red;
+	border-radius: 10% 0 0% 0%;
+	height: 47%;
+	margin: 0 !important;
+	margin-right: 10px;
+}
+
+.red:hover{
+	background-color: #ffc1c1;
+}
+
+.blue{
+	border-radius: 0% 10% 0% 0%;
+	background-color: blue;
+	height: 47%;
+	margin: 0 !important;
+}
+
+.blue:hover{
+	background-color: #a5b0f7;
+}
+
+.green{
+	border-radius: 0% 0 0% 10%;
+	background-color: green;
+	height: 47%;
+	margin: 0 !important;
+}
+.green:hover{
+	background-color: #aff7a5;
+}
+
+.yellow{
+	border-radius: 0% 0 10% 0%;
+	background-color: yellow;
+	height: 47%;
+	margin: 0 !important;
+}
+
+.yellow:hover{
+	background-color: #fffb91;
+}
+
+.menu{
+	position: absolute;
+	top: 40%;
+	left: 35%;
+	height: 20%;
+	width: 30%;
+	background-color: #fff;
+	z-index: 100;
+	border: 1px #ccc solid;
+}
+
+.text-game{
+	font-size: 15px;
+}
